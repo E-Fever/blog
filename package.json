@@ -1,0 +1,14 @@
+{
+  "name": "e-feverblog",
+  "version": "1.0.0",
+  "description": "Blog site for E-Fever",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "E-Fever",
+  "license": "BSD",
+  "dependencies": {
+    "metalsmith": "^1.3.0"
+  }
+}
