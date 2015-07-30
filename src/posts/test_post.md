@@ -5,4 +5,4 @@ author: Steven Mak
 template: post.jade
 ---
 
-This is a test post
+This is a test post. More to add
