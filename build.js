@@ -42,14 +42,6 @@ var siteBuild = metalsmith(__dirname)
       engine: 'jade',
       moment: moment
     }))
-    .use(serve({
-      port: 8080,
-      verbose: true
-    }))
-    .use(watch({
-      pattern: '**/*',
-      livereload: true
-    }))
     .build(function (err) {
       if (err) {
         console.log(err);
