@@ -1,7 +1,8 @@
 all: buildjs deploy
 
-clean:
+cleanAll:
 	rm -rf build
+	rm -rf github_build
 
 buildjs:
 	node build.js
