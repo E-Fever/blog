@@ -5,6 +5,33 @@ html
       block title
         title= title ? title + " | " + site.title : site.title
       block styles
+      link(rel='stylesheet', href='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css')
+      script(src='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js')
+      link(ref='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='mobile-web-app-capable', content='yes')
+      link(rel='icon', sizes='192x192', href='http://www.teamproto.net/img/favicon.png')
+      meta(name='apple-mobile-web-app-capable',content='yes')
+      meta(name='apple-mobile-web-app-status-bar-style',content='black')
+      meta(name='apple-mobile-web-app-title',content='Material Design Lite')
+      link(rel='apple-touch-icon-precomposed',href='http://www.teamproto.net/img/favicon.png')
+      meta(name='msapplication-TileImage',content='http://www.teamproto.net/img/favicon.png')
+      meta(name='msapplication-TileColor',content='#3372DF')
+      link(href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css')
+      link(href='https://fonts.googleapis.com/icon?family=Material+Icons',rel='stylesheet')
+      link(rel='stylesheet',href='material.min.css')
+      link(rel='stylesheet',href='styles.css')
+      style
+        #view-source 
+          position=fixed
+          display=block
+          right=0
+          bottom=0
+          margin-right='40px'
+          margin-bottom='40px'
+          z-index=900
   body
     block body
       #layout-main

@@ -1,6 +1,20 @@
 extends layout
 block main
-  article#article
-    h1= title
-    div By #{author} | Published #{moment(publishDate).format("M.D.YYYY")}
-    div!= contents
+  link(rel='stylesheet', href='../../material.min.css')
+  link(rel='stylesheet', href='../../styles.css')
+  div(class='demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded')
+    main(class='mdl-layout__container')
+      div(class='demo-back')
+        a(class='mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon',href='../../index.html',title='go back',role='button')
+          i(class='material-icons',role='presentation') arrow_back
+      div(class='demo-blog__posts mdl-grid')
+        div(class='mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col')
+          div(class=coverImage + ' mdl-card__media mdl-color-text--grey-50' style='background-image: url("../../images/'+ coverImage+ '.jpg")')
+            h3= title
+          div(class='mdl-color-text--grey-700 mdl-card__supporting-text meta')
+            div(class='minilogo')
+            div 
+              strong= "By " + author 
+              span= "Published " + moment(publishDate).format("D-MMM-YYYY")
+          div(class='mdl-color-text--grey-700 mdl-card__supporting-text')!= contents
+

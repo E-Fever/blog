@@ -19,6 +19,7 @@
     "metalsmith-serve": "0.0.3",
     "metalsmith-templates": "^0.6.1",
     "metalsmith-watch": "^0.2.0",
-    "moment": "^2.9.0"
+    "moment": "^2.9.0",
+    "material-design-lite": "1.0.2"
   }
 }
