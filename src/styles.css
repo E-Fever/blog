@@ -1,5 +1,6 @@
 body::before {
-    background-image: url('images/bg.jpg');
+/*    background-image: url('images/bg.jpg');*/
+    background-color: #EEEEEE;
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -109,7 +110,7 @@ body .demo-blog {
   min-height: 76px;
 }
 .demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
-  border-top: 1px solid rgba(0,0,0,0.1);
+  
 }
 
 .demo-blog .mdl-card__actions:first-child {
@@ -298,7 +299,7 @@ body .demo-blog {
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-/*  background-image: url('images/road_big.jpg'); */
+    background-image: url('images/road_big.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
@@ -541,4 +542,62 @@ body .demo-blog {
           align-items: center;
   background-color: white;
   box-sizing: border-box;
+}
+
+.demo-layout-transparent {
+    background-color: #EEEEEEE;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.heading-bg {
+    background: url('images/header-bg.jpg') center / cover;
+}
+
+.mdl-layout__drawer-button{
+    visibility: hidden;
+}
+
+.heading-title {
+    position: absolute;
+    bottom: 20px;
+    left: 72px;
+    color: #FFF;
+}
+@media (max-width:1025px){
+    .heading-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    }
+    .mdl-layout__drawer-button{
+    visibility: visible;
+}
+
+   
+}
+
+
+
+.heading-width{
+    width: 100%;
+}
+
+.heading-title h1{
+    line-height: 0.5;
+    font-weight: 300;
+}
+
+.heading-title h5{
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+.heading-section .mdl-card{
+    border-radius: 0px;
 }

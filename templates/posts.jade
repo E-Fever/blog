@@ -1,24 +1,60 @@
 extends layout
 block main
-  div(class='demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded')
-    main(class='mdl-layout__container')
-      div(class='demo-blog__posts mdl-grid')
-        div(class='mdl-card road mdl-cell mdl-cell--12-col')
-          div(class='mdl-card__media mdl-color-text--grey-50 ')
-            h1 E-Fever Blog
-            div Collaboration and Radiation over Hand-off and Refrigeration
-        if collections.posts && collections.posts.length > 0
-          each post in collections.posts
-            div(class='mdl-card ' + post.coverImage + ' mdl-cell mdl-cell--12-col')
-              div(class='mdl-card__media mdl-color-text--grey-50 ')
-                h3
-                  a(href='/' + post.path)!= post.title
-              div(class='mdl-card__supporting-text mdl-color-text--grey-600')!= post.excerpt
-              div(class='mdl-card__supporting-text meta mdl-color-text--grey-600')
-                .minilogo
-                div
-                  strong!=post.author
-                  span!=moment(post.publishDate).format("D-MMM-YYYY")
-        else
-          h3= collections.posts.length
-          h3 there ain't no posts here, man
+  div(class='demo-layout-transparent mdl-layout mdl-js-layout')
+    header(class='mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent is-casting-shadow')
+      main(class='mdl-layout__content')
+        div(class='mdl-layout__header-row')
+          div(class='mdl-layout-spacer')
+          nav(class='mdl-navigation')
+            a(class='mdl-navigation__link' href='') Home
+            a(class='mdl-navigation__link' href='') About
+    div(class='mdl-layout__drawer')
+      nav(class='mdl-navigation')
+        a(class='mdl-navigation__link' href='') Home
+        a(class='mdl-navigation__link' href='') About
+    div(class='mdl-layout__drawer-button')
+      i(class='material-icons') menu
+    div(class='page-content')
+  div(class='demo-blog')
+    div(class='heading-section mdl-shadow--4dp')
+      div(class='heading-width mdl-card mdl-cell--12-col heading-bg')
+        div(class='heading-title')
+          h1 E-fever
+          h5 Collaboration and Radiation over Hand-off and Refrigeration
+  div(class='demo-blog')
+    div(class='demo-blog__posts mdl-grid')
+      if collections.posts && collections.posts.length > 0
+            each post in collections.posts
+              div(class='mdl-card ' + post.coverImage + ' mdl-cell mdl-cell--12-col' +' mdl-shadow--4dp')
+                div(class='mdl-card__media mdl-color-text--grey-50 ')
+                  h3
+                    a(href='/' + post.path)!= post.title
+                div(class='mdl-card__supporting-text mdl-color-text--grey-600')!= post.excerpt
+                div(class='mdl-card__supporting-text meta mdl-color-text--grey-600')
+                  .minilogo
+                  div
+                    strong!=post.author
+                    span!=moment(post.publishDate).format("D-MMM-YYYY")
+                  div(class='mdl-layout-spacer')
+                  div
+                    a(href='/' + post.path)!= 'Read more'
+          else
+            h3= collections.posts.length
+            h3 there ain't no posts here, man
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
