@@ -9,12 +9,27 @@ block main
           i(class='material-icons',role='presentation') arrow_back
       div(class='demo-blog__posts mdl-grid')
         div(class='mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col')
-          div(class=coverImage + ' mdl-card__media mdl-color-text--grey-50' style='background-image: url("../../images/'+ coverImage+ '.jpg")')
+          div(class='mdl-card__media mdl-color-text--grey-50' style='background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../images/'+coverImage+'"); background-size:cover; background-position: center; height:300px;')
             h3= title
-          div(class='mdl-color-text--grey-700 mdl-card__supporting-text meta')
-            div(class='minilogo')
-            div 
-              strong= "By " + author 
-              span= "Published " + moment(publishDate).format("D-MMM-YYYY")
-          div(class='mdl-color-text--grey-700 mdl-card__supporting-text')!= contents
+          div(class='post')
+            div(class='meta')
+            div(class='mdl-color-text--grey-700 mdl-card__supporting-text' align='left')!= contents
+          div(class='mdl-card__supporting-text meta mdl-color-text--grey-600')
+            div(class='avatar')
+              img(src='../../images/'+author+'.jpg')
+            div(style='align-items:flex-start')
+              strong!=author
+              span!=moment(publishDate).format("D-MMM-YYYY")
+            div(class='mdl-layout-spacer')
+            div(style='display:inline-block;')
+              a(href='https://www.facebook.com/sharer/sharer.php?u=http://e-fever.github.io/posts/'+post+'/' target='_blank')
+                img(class='social-media-img' src='../../images/ic_facebook.png')
+              a(href='https://plus.google.com/share?url=http://e-fever.github.io/posts/'+post+'/' target='_blank')
+                img(class='social-media-img' src='../../images/ic_google.png')
+              a(href='https://www.linkedin.com/shareArticle?mini=true&url=http://e-fever.github.io/posts/'+post+'/' target='_blank')
+                img(class='social-media-img' src='../../images/ic_linkedin.png')
+              a(href='https://twitter.com/home?status=http://e-fever.github.io/posts/'+post+'/' target='_blank')
+                img(class='social-media-img' src='../../images/ic_twitter.png')
+      div(class='footer-section' align='center')
+        p Copyright © 2015 E-Fever Limited All rights reserved.
 

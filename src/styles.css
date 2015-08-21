@@ -62,7 +62,7 @@ body .demo-blog {
 .demo-blog .mdl-card__media {
   box-sizing: border-box;
   background-size: cover;
-  padding: 24px;
+  padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,7 +88,7 @@ body .demo-blog {
 }
 .demo-blog .mdl-card__supporting-text {
   width: 100%;
-  padding: 16px;
+  padding: 20px;
   min-height: 64px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -299,9 +299,8 @@ body .demo-blog {
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-    background-image: url('images/road_big.jpg');
-  height: 280px;
 }
+
 .demo-blog--blogpost .comments {
   background-color: #EEE;
 }
@@ -324,10 +323,11 @@ body .demo-blog {
           flex-direction: column;
 }
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
-  max-width: 512px;
+  max-width: 80%;
   margin: 16px auto;
   font-size: 16px;
   line-height: 28px;
+  text-align: left;
 }
 
 .demo-blog--blogpost .comments {
@@ -556,6 +556,7 @@ body .demo-blog {
 
 .heading-bg {
     background: url('images/header-bg.jpg') center / cover;
+    margin-bottom: 8px;
 }
 
 .mdl-layout__drawer-button{
@@ -568,21 +569,6 @@ body .demo-blog {
     left: 72px;
     color: #FFF;
 }
-@media (max-width:1025px){
-    .heading-title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #FFF;
-    }
-    .mdl-layout__drawer-button{
-    visibility: visible;
-}
-
-   
-}
-
-
 
 .heading-width{
     width: 100%;
@@ -601,3 +587,64 @@ body .demo-blog {
 .heading-section .mdl-card{
     border-radius: 0px;
 }
+
+.post-readmore a{
+  color:#039BE5;
+  text-decoration: none;
+}
+
+.post-readmore a:hover{
+  opacity: 0.8;
+} 
+
+a{
+  font-weight: 400;
+}
+
+.mdl-navigation__link a{
+  font-weight: 400;
+}
+
+.demo-blog .avatar img{
+  width: 44px;
+  height: 44px;
+  position: center;
+  border-radius: 22px;
+}
+
+.post .meta{
+  padding: 0px;
+}
+
+.demo-back .material-icons{
+  color:#000000;
+}
+
+.footer-section p{
+  margin-top: 20px;
+  height: 30px;
+  color: #333333;
+}
+
+.social-media-img{
+  padding-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width:1025px){
+    .heading-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    }
+    .mdl-layout__drawer-button{
+    visibility: visible;
+}
+    .demo-back .material-icons{
+  color:#FFFFFF;
+}
+   
+}
+

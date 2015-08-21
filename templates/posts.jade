@@ -25,22 +25,25 @@ block main
     div(class='demo-blog__posts mdl-grid')
       if collections.posts && collections.posts.length > 0
             each post in collections.posts
-              div(class='mdl-card ' + post.coverImage + ' mdl-cell mdl-cell--12-col' +' mdl-shadow--4dp')
-                div(class='mdl-card__media mdl-color-text--grey-50 ')
+              div(class='mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp')
+                div(class='mdl-card__media mdl-color-text--grey-50' style='background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("images/'+post.coverImage+'"); background-size:cover; background-position: center;')
                   h3
                     a(href='/' + post.path)!= post.title
                 div(class='mdl-card__supporting-text mdl-color-text--grey-600')!= post.excerpt
                 div(class='mdl-card__supporting-text meta mdl-color-text--grey-600')
-                  .minilogo
+                  div(class='avatar')
+                    img(src='images/'+post.author+'.jpg')
                   div
                     strong!=post.author
                     span!=moment(post.publishDate).format("D-MMM-YYYY")
                   div(class='mdl-layout-spacer')
-                  div
-                    a(href='/' + post.path)!= 'Read more'
+                  div(class='post-readmore')
+                    a(href='/' + post.path)!= 'READ MORE'
           else
             h3= collections.posts.length
             h3 there ain't no posts here, man
+  div(class='footer-section' align='center')
+    p Copyright © 2015 E-Fever Limited All rights reserved.
 
 
 
