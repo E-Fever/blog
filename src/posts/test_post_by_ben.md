@@ -8,7 +8,8 @@ coverImage: coffee.jpg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tincidunt eros, vitae sagittis justo. Ut feugiat maximus enim, nec bibendum ligula finibus ac. Nulla pretium mauris at turpis egestas feugiat. Donec porttitor ac urna eu sagittis.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tincidunt eros, vitae sagittis justo. Ut feugiat maximus enim, nec bibendum ligula finibus ac. Nulla pretium mauris at turpis egestas feugiat. Donec porttitor ac urna eu sagittis. Quisque dolor metus, porttitor sed justo vitae, ornare suscipit ligula. Nulla sodales tortor eros, sed elementum ex dapibus ac. Aliquam elit lorem, efficitur vitae euismod eu, tincidunt non lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
 
 Nulla accumsan eros et erat sagittis, a facilisis massa rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non arcu neque. Phasellus ut ligula eu mi maximus tincidunt id sed risus. Sed felis purus, dapibus vitae nisi ac, congue rhoncus sem. Suspendisse laoreet ac risus eget vestibulum. Nulla ac nisi turpis. In hac habitasse platea dictumst.
 
@@ -16,6 +17,10 @@ Duis feugiat nisi a nunc accumsan pretium. Nam eleifend ipsum libero, vitae cons
 
 Maecenas erat nulla, porta nec felis et, ornare dictum enim. Ut sodales eget eros quis efficitur. Nullam enim nunc, lobortis id velit at, tincidunt consequat libero. Suspendisse potenti. Etiam semper tellus justo, non vehicula lectus elementum et. Suspendisse dictum purus quis sem auctor, vitae vestibulum urna congue.
 
+Colons can be used to align columns.
 
-* A repeatable way to build and deploy onto github
-* Themes
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |

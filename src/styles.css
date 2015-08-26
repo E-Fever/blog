@@ -632,6 +632,8 @@ a{
   height: 24px;
 }
 
+
+
 @media (max-width:1025px){
     .heading-title {
     position: absolute;
@@ -646,5 +648,20 @@ a{
   color:#FFFFFF;
 }
    
+}
+
+.post table, .post tr{
+  border: 2px solid #616161;
+}
+
+.post blockquote{
+      padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+    content: '';
+}
+
+blockquote:before, blockquote:after{
+  content: none;
 }
 

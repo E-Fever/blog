@@ -1,7 +1,23 @@
 extends layout
 block main
-  div(class='demo-layout-transparent mdl-layout mdl-js-layout')
-    header(class='mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent is-casting-shadow')
+  script
+    include ../src/jquery.js
+  script(type='text/javascript').
+    if($(window).width() <= 1025){
+      $("#drawer").removeClass("mdl-layout");
+    } else {
+      $("#drawer").addClass("mdl-layout");
+    }
+    $(window).resize(function(){
+      if($(window).width() <= 1025){
+        $("#drawer").removeClass("mdl-layout");
+      } else {
+        $("#drawer").addClass("mdl-layout");
+      }
+    }
+    );
+  div(id='drawer' class='demo-layout-transparent mdl-js-layout')
+    header(class='mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent is-casting-shadow mdl-layout')
       main(class='mdl-layout__content')
         div(class='mdl-layout__header-row')
           div(class='mdl-layout-spacer')
