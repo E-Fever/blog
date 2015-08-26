@@ -15,6 +15,7 @@ deploy: buildjs
 	fi
 	cp -rf build/* github_build
 	cd github_build ; git add -A ; git commit -a ; git push
+	git commit -a; git push
 
 
 .PHONY: deploy
