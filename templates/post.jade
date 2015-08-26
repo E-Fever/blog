@@ -30,6 +30,11 @@ block main
                 img(class='social-media-img' src='../../images/ic_linkedin.png')
               a(href='https://twitter.com/home?status=http://e-fever.github.io/posts/#{title.toLowerCase().replace(/\ /g,"-")}/index.html' target='_blank')
                 img(class='social-media-img' src='../../images/ic_twitter.png')
+          div(id='disqus_thread' style='padding:10px')
+          script
+            include ../src/js/disqus.js
+          noscript Please enable JavaScript to view the 
+            a(href='https://disqus.com/?ref_noscript' rel='nofollow') comments powered by Disqus.
       div(class='footer-section' align='center')
         p Copyright © 2015 E-Fever Limited All rights reserved.
 

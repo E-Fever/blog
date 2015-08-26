@@ -44,7 +44,7 @@ block main
               div(class='mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp')
                 div(class='mdl-card__media mdl-color-text--grey-50' style='background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("images/'+post.coverImage+'"); background-size:cover; background-position: center;')
                   h3
-                    a(href='/' + post.path)!= post.title
+                    a(href=post.path+'/index.html')!= post.title
                 div(class='mdl-card__supporting-text mdl-color-text--grey-600')!= post.excerpt
                 div(class='mdl-card__supporting-text meta mdl-color-text--grey-600')
                   div(class='avatar')
@@ -54,7 +54,7 @@ block main
                     span!=moment(post.publishDate).format("D-MMM-YYYY")
                   div(class='mdl-layout-spacer')
                   div(class='post-readmore')
-                    a(href='/' + post.path)!= 'READ MORE'
+                    a(href=post.path+'/index.html')!= 'READ MORE'
           else
             h3= collections.posts.length
             h3 there ain't no posts here, man

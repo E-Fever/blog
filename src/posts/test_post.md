@@ -6,4 +6,4 @@ template: post.jade
 coverImage: pic3.jpg
 ---
 
-This is a test post. More to add
+This is a test post. More to add. Testing git empty commits
