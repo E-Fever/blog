@@ -6,16 +6,115 @@ template: post.jade
 coverImage: pic1.jpg
 ---
 
-abbcbcbcbjdhjkshfhs
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tincidunt eros, vitae sagittis justo. Ut feugiat maximus enim, nec bibendum ligula finibus ac. Nulla pretium mauris at turpis egestas feugiat. Donec porttitor ac urna eu sagittis. Quisque dolor metus, porttitor sed justo vitae, ornare suscipit ligula. Nulla sodales tortor eros, sed elementum ex dapibus ac. Aliquam elit lorem, efficitur vitae euismod eu, tincidunt non lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Alternatively, for H1 and H2, an underline-ish style:
 
-Nulla accumsan eros et erat sagittis, a facilisis massa rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non arcu neque. Phasellus ut ligula eu mi maximus tincidunt id sed risus. Sed felis purus, dapibus vitae nisi ac, congue rhoncus sem. Suspendisse laoreet ac risus eget vestibulum. Nulla ac nisi turpis. In hac habitasse platea dictumst.
+Alt-H1
+======
 
-Duis feugiat nisi a nunc accumsan pretium. Nam eleifend ipsum libero, vitae consequat elit elementum vitae. Proin tellus quam, commodo et tincidunt in, ultrices eget neque. Donec ligula turpis, tristique nec massa quis, molestie suscipit dui. In luctus diam eu sem ornare, ut consequat ante sollicitudin. Nunc eleifend libero eget ligula hendrerit, non vulputate sem porta. Nullam vulputate urna nibh, vitae tempor arcu accumsan eget. Quisque justo lectus, pharetra et lobortis vitae, egestas ut tortor. Pellentesque ut tellus eget nisl placerat sagittis.
+Alt-H2
+------
 
-Maecenas erat nulla, porta nec felis et, ornare dictum enim. Ut sodales eget eros quis efficitur. Nullam enim nunc, lobortis id velit at, tincidunt consequat libero. Suspendisse potenti. Etiam semper tellus justo, non vehicula lectus elementum et. Suspendisse dictum purus quis sem auctor, vitae vestibulum urna congue.
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
+Emphasis, aka italics, with *asterisks* or _underscores_.
 
-* A repeatable way to build and deploy onto github
-* Themes
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <http://www.example.com> and sometimes 
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Inline `code` has `back-ticks around` it.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
