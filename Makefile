@@ -8,7 +8,7 @@ buildjs:
 	node build.js
 
 deploy: buildjs 
-	git commit -a; git push
+	git add -A; git commit -a; git push
 	@if [ ! -d ./github_build ]; then \
 		git clone https://github.com/e-fever/e-fever.github.io github_build;  \
 	else \
