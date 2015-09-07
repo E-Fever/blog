@@ -2,7 +2,7 @@
 set -e # exit with nonzero exit code if anything fails
 
 rm -rf github_build || exit 0;
-git clone https://github.com/e-fever/e-fever.github.io github_build;
+git clone "https://${GH_TOKEN}@github.com/e-fever/e-fever.github.io" github_build;
 
 cp -rf build/* github_build
 
