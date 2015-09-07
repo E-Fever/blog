@@ -14,8 +14,7 @@ deploy:
     - ./build/*
     - ./build/*/*
     - ./build/*/*/*
-  on:
-    repo: e-fever/blog
-    branches:
-      - development
+  repo: e-fever/blog
+  branches:
+    only:
       - master
