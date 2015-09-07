@@ -16,3 +16,5 @@ deploy:
     - ./build/*/*/*
   on:
     repo: e-fever/blog
+    tags: true
+    all_branches: true
