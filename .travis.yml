@@ -16,7 +16,6 @@ deploy:
     - ./build/*/*/*
   on:
     repo: e-fever/blog
-    tags: true
     branches:
       - development
       - master
