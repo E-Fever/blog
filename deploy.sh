@@ -13,4 +13,4 @@ git config user.name "Steven Mak"
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
 
-cd github_build;git add -A;git commit -a --allow-empty-message -m "Deploy to GitHub Pages";git push "https://${GH_TOKEN}@github.com/e-fever/e-fever.github.io" master
+cd github_build;git pull; git add -A;git commit -a --allow-empty-message -m "Deploy to GitHub Pages";git push "https://${GH_TOKEN}@github.com/e-fever/e-fever.github.io" master
