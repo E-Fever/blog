@@ -6,7 +6,8 @@ node_js:
 
 deploy:
   provider: script
-  script: bash -x ./deploy.sh
+  script: make deploy
+#  script: bash -x ./deploy.sh
 
 #before_deploy: git fetch --tags
 
