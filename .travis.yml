@@ -17,4 +17,6 @@ deploy:
   on:
     repo: e-fever/blog
     tags: true
-    all_branches: true
+    branches:
+      - development
+      - master
