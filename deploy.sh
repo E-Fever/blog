@@ -22,10 +22,5 @@ node ./build.js
 
 #cd github_build; \
 
-cd build; \
-  git config --global user.name "Steven Mak"; \
-  git config --global user.email "stevenmak@gmail.com"; \
-  git add -A; \
-  git commit -a --allow-empty-message -m "Deploy to GitHub Pages"; \
-  git push "https://${GH_TOKEN}@github.com/e-fever/e-fever.github.io" master;
+cd build; git config --global user.name "Steven Mak"; git config --global user.email "stevenmak@gmail.com"; git add -A; git commit -a -m "Deploy to GitHub Pages";  git push "https://${GH_TOKEN}@github.com/e-fever/e-fever.github.io" master
 
