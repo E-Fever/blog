@@ -4,7 +4,7 @@ set -e # exit with nonzero exit code if anything fails
 rm -rf github_build || exit 0;
 git clone "https://${GH_TOKEN}@github.com/e-fever/e-fever.github.io.git" github_build;
 
-cp -rf build/* github_build
+cp -rf e-fever/blog/build/* github_build
 
 # go to the out directory and create a *new* Git repo
 
