@@ -7,4 +7,3 @@ coverImage: pic3.jpg
 ---
 
 This is a test post. More to add. Testing git empty commits.
-More
