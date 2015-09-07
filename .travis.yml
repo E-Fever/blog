@@ -1,10 +1,11 @@
 language: node_js
 node_js:
 - '0.12'
+script: bash -x ./deploy.sh
 
-deploy:
-  provider: script
-  script: bash -x ./deploy.sh
+#deploy:
+#  provider: script
+#  script: bash -x ./deploy.sh
 
 #before_deploy: git fetch --tags
 
