@@ -4,17 +4,21 @@ node_js:
 - '0.11'
 - '0.10'
 
-before_deploy: git fetch --tags
-
 deploy:
-  provider: releases
-  api_key:
-    secure: IfwL4aqbaXLlZyrGTe9xuKif5slukW1aN/saeEEmedu56DzSHlGut6/7qgQskdKgSh1JpvXLfIQSoInIdFdaDQNzIgVpQbhbQS6KdtyVEd40he43ELfNWgKGR/GuX0TjLlvka5BZteH6B33aHOaX1rU+IOI9IVqPz403wFoGBFhOFFv/8Oqbo0uzXfgh6A8Apf/sU3UE+iWr31Lm7qxg9EQxnxGuiZFAoSuXdnlxyx1JlkcTOgAMotzFi4VAAfDI0rRLnbGT1Ht3vBWzm8KuVj9kbfOrHifWTmrgTY5w06Qw5Du8dqzOn3zQb6Sl6VtLHTm/yFpRWkGl1+D/W5W1F8fTuPMnk9Idw2TAggrqUh3jVPSquUAu+5FvbtXkynQ+kHi+jpTewO+WJeq3DHRrbBfOXnLiIKW6nqJy4eP+q7mbo/hrOgvqusK5ZxpGCYnVYAFW3gLYwIQ1z5E+3u+VqQ3iK2TReJ4lHnrV9Xnmx7sEDyZSZ9/8JBQHNu5JGxYcpqujMwd5Y5doI1j8UcKImnnOZBqkZcDK8dtSzpwaJ8zxN81XOZtfuMrBKtn++rBpv6UNhQofHQvP2LObRv/WYu5HWyB5i4fPI+jZl/2tXvWeYdLHmO/5DZ0M72Ia3+Ptfzp+ODFZH1eBkf3XddnD/ItdihsWXcVgLox8zrRqon0=
-  file: 
-    - ./build/*
-    - ./build/*/*
-    - ./build/*/*/*
-  repo: e-fever/blog
-  branches:
-    only:
-      - master
+  provider: script
+  script: make deploy
+
+#before_deploy: git fetch --tags
+
+#deploy:
+#  provider: releases
+#  api_key:
+#    secure: IfwL4aqbaXLlZyrGTe9xuKif5slukW1aN/saeEEmedu56DzSHlGut6/7qgQskdKgSh1JpvXLfIQSoInIdFdaDQNzIgVpQbhbQS6KdtyVEd40he43ELfNWgKGR/GuX0TjLlvka5BZteH6B33aHOaX1rU+IOI9IVqPz403wFoGBFhOFFv/8Oqbo0uzXfgh6A8Apf/sU3UE+iWr31Lm7qxg9EQxnxGuiZFAoSuXdnlxyx1JlkcTOgAMotzFi4VAAfDI0rRLnbGT1Ht3vBWzm8KuVj9kbfOrHifWTmrgTY5w06Qw5Du8dqzOn3zQb6Sl6VtLHTm/yFpRWkGl1+D/W5W1F8fTuPMnk9Idw2TAggrqUh3jVPSquUAu+5FvbtXkynQ+kHi+jpTewO+WJeq3DHRrbBfOXnLiIKW6nqJy4eP+q7mbo/hrOgvqusK5ZxpGCYnVYAFW3gLYwIQ1z5E+3u+VqQ3iK2TReJ4lHnrV9Xnmx7sEDyZSZ9/8JBQHNu5JGxYcpqujMwd5Y5doI1j8UcKImnnOZBqkZcDK8dtSzpwaJ8zxN81XOZtfuMrBKtn++rBpv6UNhQofHQvP2LObRv/WYu5HWyB5i4fPI+jZl/2tXvWeYdLHmO/5DZ0M72Ia3+Ptfzp+ODFZH1eBkf3XddnD/ItdihsWXcVgLox8zrRqon0=
+#  file: 
+#    - ./build/*
+#    - ./build/*/*
+#    - ./build/*/*/*
+#  repo: e-fever/blog
+#  branches:
+#    only:
+#      - master
